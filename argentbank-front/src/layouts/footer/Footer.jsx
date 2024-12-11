@@ -7,8 +7,8 @@ const Footer = () => {
     
     return (
         <>
-            <footer class="footer">
-                <p class="footer-text">Copyright {currentYear} Argent Bank</p>
+            <footer className="footer">
+                <p className="footer-text">Copyright {currentYear} Argent Bank</p>
             </footer>
         </>
     )
