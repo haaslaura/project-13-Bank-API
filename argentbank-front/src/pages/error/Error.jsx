@@ -1,6 +1,6 @@
 import Home from '../home/Home'
 import { Link } from 'react-router'
-import './Error.css'
+import './error.css'
 
 const Error = () => {
     return (

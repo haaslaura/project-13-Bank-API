@@ -2,6 +2,8 @@ import './header.css'
 import logo from '../../assets/argentBankLogo.svg'
 import { Link } from 'react-router'
 
+// -> Sign out + User name si user connecté
+
 const Header = () => {
     
     return (

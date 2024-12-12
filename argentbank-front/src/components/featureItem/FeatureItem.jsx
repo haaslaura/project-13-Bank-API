@@ -1,4 +1,5 @@
 import "./featureItem.css"
+import PropTypes from "prop-types"
 
 
 const FeatureItem = ({ img, title, text }) => {
@@ -15,6 +16,12 @@ const FeatureItem = ({ img, title, text }) => {
             </p>
         </div>
     )
+}
+
+FeatureItem.propTypes = {
+    img: PropTypes.string,
+    title: PropTypes.string,
+    text: PropTypes.string,
 }
 
 export default FeatureItem
