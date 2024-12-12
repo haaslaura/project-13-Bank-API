@@ -17,11 +17,12 @@ function App() {
         <Header />
         <Routes>
           {/* Parent route */}
-          <Route path="/" element={<Main />} />
+          <Route path="/" element={<Main />} >
             {/* Children route */}
             <Route index element={<Home />} />
-            <Route path="/sign-in" element={<SignIn />} />
+            <Route path="sign-in" element={<SignIn />} />
             <Route path="*" element={<Error />} />
+          </Route>
         </Routes>
         <Footer />
       </BrowserRouter>

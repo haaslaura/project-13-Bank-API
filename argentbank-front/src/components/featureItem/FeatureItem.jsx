@@ -1,10 +1,7 @@
 import "./featureItem.css"
 
-const FeatureItem = ({ img, title, text }) => {
 
-    console.log(img)
-    console.log(title)
-    console.log(text)
+const FeatureItem = ({ img, title, text }) => {
     
     return (
         <div className="feature-item">

@@ -7,7 +7,6 @@ import chatIcon from "../../assets/icon-chat.svg"
 import moneyIcon from "../../assets/icon-money.svg"
 import securityIcon from "../../assets/icon-security.svg"
 
-
 const featuresItemContent = [
     {
         img: chatIcon,
@@ -29,22 +28,22 @@ const featuresItemContent = [
 const Home = () => {
     
     return (
-        <main>
+        <>
             <Hero />
             <section className="features">
                 <h2 className="sr-only">Features</h2>
                 {
-                    featuresItemContent.map((item, index) => {                        
+                    featuresItemContent.map((item, index) => (
                         <FeatureItem
                             key={`feature-item-${index}`}
                             img={item.img}
                             title={item.title}
                             text={item.text}                            
                         />
-                    })
-                }                
+                    ))
+                }
             </section>
-        </main>
+        </>
     )
 }
 
