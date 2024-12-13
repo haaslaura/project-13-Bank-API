@@ -1,8 +1,19 @@
 import { Link } from 'react-router'
 import './signin.css'
-
+import { useDispatch } from 'react-redux'
+import { disableDarkMode, enableDarkMode } from '../../layouts/main/themeSlice'
+import { useEffect } from 'react'
 
 const SignIn = () => {
+    const dispatch = useDispatch()
+
+    // activates bg-dark on assembly, deactivates bg-dark on disassembly
+    useEffect(() => {
+        dispatch(enableDarkMode())
+        return () => {
+            dispatch(disableDarkMode())
+          }
+    }, [])
 
     return (
         <section className="sign-in-content">

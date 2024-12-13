@@ -3,7 +3,7 @@ import './App.css'
 
 import Header from '../layouts/header/Header'
 import Footer from '../layouts/footer/Footer'
-import Main from "../layouts/main/main"
+import Main from "../layouts/main/Main"
 
 import Home from '../pages/home/Home'
 import Error from "../pages/error/Error"
